@@ -1081,13 +1081,13 @@ img, svg {
     border-radius: 4rem;
     cursor: pointer;
     transition: .4s ease;
-    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+}    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
 }
 
 .submit-btn:hover {
     box-shadow: 0 6px 25px rgba(255, 170, 0, 0.5);
     transform: translateY(-2px);
-}
+
 
 /*==================== FOOTER ====================*/
 .footer {
