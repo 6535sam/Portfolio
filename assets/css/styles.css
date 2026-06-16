@@ -1142,59 +1142,6 @@ img, svg {
     }
 }
 
-
-/* ==================== CONTACT MOBILE RESPONSIVENESS ==================== */
-
-@media (max-width: 768px) {
-    /* मोबाईलवर टायटल सेंटरलाच राहील आणि साईज लहान होईल */
-    .contact .section-title {
-        font-size: 2.5rem !important; 
-        margin-bottom: 3rem ;
-        text-align: center ;
-    }
-
-    .contact {
-        padding: 5rem 4% 3rem; 
-    }
-
-    .contact-form {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .contact-left, 
-    .contact-right {
-        flex: none;
-        width: 100%;
-        gap: 1.5rem;
-    }
-
-    .input-box input, 
-    .input-box textarea {
-        padding: 1.2rem;
-        font-size: 1.4rem;
-    }
-
-    .input-box textarea {
-        height: 180px; 
-    }
-
-    .submit-btn {
-        padding: 1.2rem;
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact .section-title {
-        font-size: 2.2rem !important;
-        margin-bottom: 3rem;
-        text-align: center ;
-    }
-  }
-
-
-
 /*==================== FOOTER ====================*/
 .footer {
     background: #13171c;
