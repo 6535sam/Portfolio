@@ -876,13 +876,13 @@ img, svg {
     height: auto; 
   }
 }
-
 /*==================== CERTIFICATES SECTION (RECTANGLE GRID) ====================*/
 
 #certificates, .Certificates.section {
     background: #323946 ; 
     padding: 10rem 9% 5rem ;
 }
+
 
 #certificates .section-title, .Certificates .section-title {
     color: #ff4500 ; 
@@ -937,7 +937,6 @@ img, svg {
     font-weight: 700 ;
 }
 
-
 .projects .project-card {
     background: #1f242d ; 
     border: 2px solid transparent ;
@@ -952,57 +951,58 @@ img, svg {
     box-shadow: 0 0 25px rgba(255, 69, 0, 0.4) ;
 }
 
+/* ==================== MEDIA QUERIES  ==================== */
 
 @media (max-width: 768px) {
-   
+    
+    #certificates .section-title, .Certificates .section-title,
+    #projects .section-title, .projects .section-title {
+        font-size: 2.5rem !important;
+        margin-bottom: 3rem ;
+    }
+
+    #certificates, .Certificates.section {
+        padding: 5rem 4% 3rem ; 
+    }
+
     .Certificates .certifications-container {
         grid-template-columns: 1fr ; 
-        gap: 2rem ;
-        padding: 1rem ;
+        gap: 1.5rem ;
+        padding: 0.5rem ;
     }
+
     .Certificates .certification-card {
         width: 100% ;
         height: auto ; 
-        min-height: 90px ; 
-        padding: 1.5rem 2rem ;
+        min-height: 80px ; 
+        padding: 1.2rem 1.5rem ;
         flex-direction: row ; 
         justify-content: center ;
         align-items: center ;
     }
 
-   
     .Certificates .certification-card p {
-        font-size: 1.5rem ;
-        line-height: 1.3 ;
+        font-size: 1.2rem ;
+        line-height: 1.4 ;
         white-space: normal; 
         width: 100%;
+        margin: 0;
     }
 }
 
 @media (max-width: 480px) {
+  
+    #certificates .section-title, .Certificates .section-title,
+    #projects .section-title, .projects .section-title {
+        font-size: 2.2rem !important; 
+    }
 
     .Certificates .certification-card {
-        min-height: 85px ;
-        padding: 1.2rem 1.5rem ;
+        min-height: 75px ;
+        padding: 1rem 1.2rem ;
     }
     .Certificates .certification-card p {
-        font-size: 1.4rem ;
-    }
-}
-/*==================== RESPONSIVE ====================*/
-@media (max-width: 991px) {
-    .certifications-container {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (max-width: 768px) {
-    .certifications-container {
-        grid-template-columns: 1fr; 
-    }
-    
-    .certification-card {
-        min-height: 100px;
+        font-size: 1.1rem ;
     }
 }
 
