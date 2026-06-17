@@ -1146,10 +1146,13 @@ img, svg {
         font-size: 2.2rem;
     }
 }
-/*==================== FINAL CORRECTED FOOTER ====================*/
-.footer {
-    background: #191f28 !important; 
-    padding: 5rem 2% 4rem !important;
+/*==================== SCREENSHOT EXACT MATCH STYLES ====================*/
+
+/* १. मुख्य फुटर बॅकग्राउंड आणि रचना */
+html body .footer,
+html body footer.footer {
+    background: #191f28 !important; /* डार्क बॅकग्राउंड */
+    padding: 6rem 2% 5rem !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -1159,100 +1162,104 @@ img, svg {
     clear: both !important;
 }
 
-
-.footer .footer-social {
+/* २. सोशल मीडिया आयकॉन्स (परफेक्ट गोल आणि ऑरेंज रंग) */
+html body .footer .footer-social {
     display: flex !important;
     gap: 2.5rem !important;
     margin-bottom: 3.5rem !important; 
+    justify-content: center !important;
+    width: 100% !important;
 }
 
-.footer .footer-social a {
+html body .footer .footer-social a {
     display: inline-flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 5.5rem !important;
     height: 5.5rem !important;
     background: transparent !important;
-    border: 2.2px solid #ff4500 !important; 
-    border-radius: 50% !important; 
+    border: 2px solid #ff4500 !important; /* स्क्रीनशॉट सारखी ऑरेंज बॉर्डर */
+    border-radius: 50% !important; /* परफेक्ट गोल */
     font-size: 2.4rem !important;
-    color: #ff4500 !important; 
+    color: #ff4500 !important; /* ऑरेंज आयकॉन्स */
     text-decoration: none !important;
     transition: 0.3s ease !important;
 }
 
-.footer .footer-social a:hover {
+/* आयकॉन्सवरील होव्हर इफेक्ट */
+html body .footer .footer-social a:hover {
     background: #ff4500 !important;
     color: #191f28 !important;
     box-shadow: 0 0 15px rgba(255, 69, 0, 0.5) !important;
     transform: translateY(-3px) !important;
 }
 
-
-.footer .footer-links {
+/* ३. क्विक नेव्हिगेशन लिंक्स (स्क्रीनशॉट प्रमाणे २ लाईन्समध्ये मांडणी) */
+html body .footer .footer-links {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 3rem !important;
-    max-width: 750px !important;
+    gap: 3rem 4rem !important; /* सुटसुटीत गॅप */
+    max-width: 650px !important; /* यामुळे जास्त लिंक्स ऑटोमॅटिक २ लाईन्समध्ये सेट होतील */
     flex-wrap: wrap !important; 
-    margin-bottom: 3.5rem !important; 
+    margin-bottom: 4rem !important; 
+    width: 100% !important;
 }
 
-.footer .footer-links a {
+html body .footer .footer-links a {
     font-size: 1.8rem !important;
-    color: #bcbcbc !important; 
+    color: #bcbcbc !important; /* स्क्रीनशॉट सारखा हलका पांढरा रंग */
     text-decoration: none !important;
     font-weight: 400 !important;
+    font-family: sans-serif !important;
     transition: 0.3s ease !important;
 }
 
-.footer .footer-links a:hover {
-    color: #ff4500 !important; 
+html body .footer .footer-links a:hover {
+    color: #ff4500 !important;
 }
 
-
-.footer .footer-text {
+/* ४. बायो टेक्स्ट (लॅपटॉपवर पूर्ण एका लाईनमध्ये आणि मोबाईलवर न कट होता) */
+html body .footer .footer-text {
     width: 100% !important;
-    max-width: 850px !important;
+    max-width: 950px !important; /* लॅपटॉपवर पूर्ण एका लाईनमध्ये बसण्यासाठी विड्थ वाढवली */
     text-align: center !important;
 }
 
-.footer .footer-text p {
-    font-size: 1.5rem !important;
-    color: #5d6575 !important; 
+html body .footer .footer-text p {
+    font-size: 1.6rem !important;
+    color: #5d6575 !important; /* स्क्रीनशॉट मधील टेक्स्टचा रंग */
     text-align: center !important;
     line-height: 1.8 !important;
     width: 100% !important;
     max-width: 100% !important;
     display: inline-block !important;
-    white-space: normal !important; 
+    white-space: normal !important; /* एका लाईनमध्ये जबरदस्तीने बसवणे बंद करेल */
     word-wrap: break-word !important;
-    overflow-wrap: break-word !important; 
+    overflow-wrap: break-word !important; /* मोबाईलवर जागा संपताच शब्द खाली येईल */
+    margin: 0 !important;
+    font-family: sans-serif !important;
 }
 
 /* ==================== RESPONSIVENESS FOR MOBILE ==================== */
 @media (max-width: 768px) {
-    .footer {
+    html body .footer, html body footer.footer {
         padding: 4rem 5% 3rem !important;
     }
-    .footer .footer-social {
-        gap: 2rem !important;
-        margin-bottom: 2.5rem !important;
-    }
-    .footer .footer-social a {
+    html body .footer .footer-social a {
         width: 4.8rem !important;
         height: 4.8rem !important;
         font-size: 2rem !important;
     }
-    .footer .footer-links {
-        gap: 1.5rem 2rem !important; 
-        margin-bottom: 2.5rem !important;
+    html body .footer .footer-links {
+        gap: 1.8rem 2rem !important; 
+        margin-bottom: 3rem !important;
+        max-width: 100% !important;
     }
-    .footer .footer-links a {
+    html body .footer .footer-links a {
         font-size: 1.5rem !important;
     }
-    .footer .footer-text p {
+    html body .footer .footer-text p {
         font-size: 1.3rem !important;
         line-height: 1.6 !important;
     }
