@@ -1146,26 +1146,27 @@ img, svg {
         font-size: 2.2rem;
     }
 }
-/*==================== PORTFOLIO FOOTER STYLES ====================*/
-.portfolio-footer {
+/*==================== FINAL CORRECTED FOOTER ====================*/
+.footer {
     background: #191f28 !important; 
-    padding: 5rem 4% 4rem !important;
+    padding: 5rem 2% 4rem !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    clear: both !important;
 }
 
 
-.portfolio-footer .p-footer-social {
+.footer .footer-social {
     display: flex !important;
     gap: 2.5rem !important;
     margin-bottom: 3.5rem !important; 
 }
 
-.portfolio-footer .p-footer-social a {
+.footer .footer-social a {
     display: inline-flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -1180,7 +1181,7 @@ img, svg {
     transition: 0.3s ease !important;
 }
 
-.portfolio-footer .p-footer-social a:hover {
+.footer .footer-social a:hover {
     background: #ff4500 !important;
     color: #191f28 !important;
     box-shadow: 0 0 15px rgba(255, 69, 0, 0.5) !important;
@@ -1188,7 +1189,7 @@ img, svg {
 }
 
 
-.portfolio-footer .p-footer-links {
+.footer .footer-links {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -1198,7 +1199,7 @@ img, svg {
     margin-bottom: 3.5rem !important; 
 }
 
-.portfolio-footer .p-footer-links a {
+.footer .footer-links a {
     font-size: 1.8rem !important;
     color: #bcbcbc !important; 
     text-decoration: none !important;
@@ -1206,56 +1207,52 @@ img, svg {
     transition: 0.3s ease !important;
 }
 
-.portfolio-footer .p-footer-links a:hover {
+.footer .footer-links a:hover {
     color: #ff4500 !important; 
 }
 
 
-.portfolio-footer .p-footer-text {
+.footer .footer-text {
     width: 100% !important;
     max-width: 850px !important;
     text-align: center !important;
 }
 
-.portfolio-footer .p-footer-text .p-bio {
+.footer .footer-text p {
     font-size: 1.5rem !important;
     color: #5d6575 !important; 
     text-align: center !important;
     line-height: 1.8 !important;
     width: 100% !important;
-    display: block !important;
+    max-width: 100% !important;
+    display: inline-block !important;
     white-space: normal !important; 
     word-wrap: break-word !important;
     overflow-wrap: break-word !important; 
 }
 
-/* ==================== MOBILE RESPONSIVENESS ==================== */
+/* ==================== RESPONSIVENESS FOR MOBILE ==================== */
 @media (max-width: 768px) {
-    .portfolio-footer {
+    .footer {
         padding: 4rem 5% 3rem !important;
     }
-
-    .portfolio-footer .p-footer-social {
+    .footer .footer-social {
         gap: 2rem !important;
         margin-bottom: 2.5rem !important;
     }
-
-    .portfolio-footer .p-footer-social a {
+    .footer .footer-social a {
         width: 4.8rem !important;
         height: 4.8rem !important;
         font-size: 2rem !important;
     }
-
-    .portfolio-footer .p-footer-links {
+    .footer .footer-links {
         gap: 1.5rem 2rem !important; 
         margin-bottom: 2.5rem !important;
     }
-
-    .portfolio-footer .p-footer-links a {
+    .footer .footer-links a {
         font-size: 1.5rem !important;
     }
-
-    .portfolio-footer .p-footer-text .p-bio {
+    .footer .footer-text p {
         font-size: 1.3rem !important;
         line-height: 1.6 !important;
     }
