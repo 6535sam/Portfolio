@@ -481,7 +481,7 @@ img, svg {
 .card-glow-line {
   width: 5px;
   background: linear-gradient(180deg, #ff1d15 0%, #DF8908 100%);
-  box-shadow: 0 0 15px rgba(223, 137, 8, 0.9); /* ऑरेंज लाईन ग्लो */
+  box-shadow: 0 0 15px rgba(223, 137, 8, 0.9); 
 }
 
 .card-content {
@@ -1008,12 +1008,12 @@ img, svg {
 
 /*==================== CONTACT ME (LAPTOP & DESKTOP) ====================*/
 .contact {
-    background: #242933; /* तुमच्या थीमचा बॅकग्राउंड कलर */
+    background: #242933; 
     padding: 8rem 9% 4rem;
     width: 100%;
 }
 
-/* टायटल सेंटरला आणि परफेक्ट साईजमध्ये */
+
 .contact .section-title {
     color: #ff4500; 
     font-size: 4.5rem;
@@ -1022,14 +1022,14 @@ img, svg {
     font-weight: 700;
 }
 
-/* कंटेनरची विड्थ आणि मांडणी */
+
 .contact-container {
     max-width: 1100px;
     margin: 0 auto;
     width: 100%;
 }
 
-/* फॉर्ममधील दोन्ही कॉलम्स शेजारी दिसण्यासाठी */
+
 .contact-form {
     display: flex;
     gap: 4rem;
@@ -1037,7 +1037,7 @@ img, svg {
     align-items: flex-start;
 }
 
-/* डावा भाग (Inputs) आणि उजवा भाग (Textarea) दोन्ही समान ५०-५०% जागा घेतील */
+
 .contact-left,
 .contact-right {
     flex: 1;
@@ -1051,34 +1051,33 @@ img, svg {
     width: 100%;
 }
 
-/* इनपुट फिल्ड्स आणि टेक्स्टएरियाचे डिझाईन जे विखुरले होते ते इथे फिक्स केले आहे */
+
 .contact-form input, 
 .contact-form textarea {
-    width: 100% !important; /* पूर्ण विड्थ घेईल */
+    width: 100% !important; 
     padding: 1.6rem 2rem;
     font-size: 1.6rem;
     color: #fff;
-    background: #1f242d; /* डार्क बॅकग्राउंड */
+    background: #1f242d; 
     border-radius: 1.2rem;
-    border: 2px solid #ff4500; /* ऑरेंज बॉर्डर */
+    border: 2px solid #ff4500; 
     outline: none;
     transition: .3s ease;
 }
 
-/* टेक्स्टएरियाची हाईट लॅपटॉपसाठी */
 .contact-form textarea {
     resize: none;
     height: 220px; 
 }
 
-/* फोकस केल्यावर बदलणारा कलर */
+
 .contact-form input:focus, 
 .contact-form textarea:focus {
     border-color: #ffaa00;
     box-shadow: 0 0 15px rgba(255, 170, 0, 0.4);
 }
 
-/* सेंड मेसेज बटणचे कडक डिझाईन */
+
 .submit-btn {
     display: block;
     width: 100%;
@@ -1099,7 +1098,7 @@ img, svg {
     transform: translateY(-2px);
 }
 
-/* ==================== CONTACT MOBILE RESPONSIVENESS (मोबाईलसाठी) ==================== */
+/* ==================== CONTACT MOBILE RESPONSIVENESS  ==================== */
 
 @media (max-width: 768px) {
     .contact {
@@ -1147,5 +1146,91 @@ img, svg {
         font-size: 2.2rem;
     }
 }
+/*==================== FOOTER SECTION (LAPTOP & DESKTOP) ====================*/
+footer {
+    background: #1f242d;
+    padding: 3rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 2px solid #ff4500; 
+    width: 100%;
+}
 
+
+.footer-text p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 2px solid #ff4500;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #ff4500;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+
+.footer-social a:hover {
+    background: #ff4500;
+    color: #1f242d;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #ff4500;
+    border-radius: .8rem;
+    transition: .3s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.6);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: #1f242d;
+}
+
+/* ==================== FOOTER MOBILE RESPONSIVENESS ==================== */
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column-reverse; 
+        gap: 2rem;
+        padding: 2.5rem 4%;
+        text-align: center;
+    }
+
+    .footer-text p {
+        font-size: 1.3rem;
+    }
+
+    .footer-social a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+    }
+}
 
