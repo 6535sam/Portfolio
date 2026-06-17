@@ -1006,78 +1006,89 @@ img, svg {
     }
 }
 
-/*==================== CONTACT ME ====================*/
+/*==================== CONTACT ME (LAPTOP & DESKTOP) ====================*/
 .contact {
-    background: var(--bg-color);
-    padding: 10rem 9% 2rem;
-}
-
-.contact-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.contact-form {
-    display: flex;
-    gap: 3rem;
+    background: #242933; /* तुमच्या थीमचा बॅकग्राउंड कलर */
+    padding: 8rem 9% 4rem;
     width: 100%;
 }
 
-
-.contact-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+/* टायटल सेंटरला आणि परफेक्ट साईजमध्ये */
+.contact .section-title {
+    color: #ff4500; 
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-weight: 700;
 }
 
+/* कंटेनरची विड्थ आणि मांडणी */
+.contact-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
 
+/* फॉर्ममधील दोन्ही कॉलम्स शेजारी दिसण्यासाठी */
+.contact-form {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    align-items: flex-start;
+}
+
+/* डावा भाग (Inputs) आणि उजवा भाग (Textarea) दोन्ही समान ५०-५०% जागा घेतील */
+.contact-left,
 .contact-right {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 50%;
 }
 
 .input-box {
     width: 100%;
 }
 
-.input-box input, 
-.input-box textarea {
-    width: 100%;
-    padding: 1.8rem;
+/* इनपुट फिल्ड्स आणि टेक्स्टएरियाचे डिझाईन जे विखुरले होते ते इथे फिक्स केले आहे */
+.contact-form input, 
+.contact-form textarea {
+    width: 100% !important; /* पूर्ण विड्थ घेईल */
+    padding: 1.6rem 2rem;
     font-size: 1.6rem;
-    color: var(--text-color);
-    background: #1f242d;
-    border-radius: 1.5rem;
-    border: 2px solid #ff4500; 
+    color: #fff;
+    background: #1f242d; /* डार्क बॅकग्राउंड */
+    border-radius: 1.2rem;
+    border: 2px solid #ff4500; /* ऑरेंज बॉर्डर */
+    outline: none;
     transition: .3s ease;
 }
 
-
-.input-box textarea {
+/* टेक्स्टएरियाची हाईट लॅपटॉपसाठी */
+.contact-form textarea {
     resize: none;
-    height: 290px; 
+    height: 220px; 
 }
 
-.input-box input:focus, 
-.input-box textarea:focus {
+/* फोकस केल्यावर बदलणारा कलर */
+.contact-form input:focus, 
+.contact-form textarea:focus {
     border-color: #ffaa00;
     box-shadow: 0 0 15px rgba(255, 170, 0, 0.4);
 }
 
-
+/* सेंड मेसेज बटणचे कडक डिझाईन */
 .submit-btn {
     display: block;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.4rem;
     background: linear-gradient(90deg, #ff4500, #ffaa00);
-    color: var(--text-color);
+    color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 4rem;
+    border-radius: 3rem;
+    border: none;
     cursor: pointer;
     transition: .4s ease;
     box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
@@ -1088,66 +1099,53 @@ img, svg {
     transform: translateY(-2px);
 }
 
-/*==================== FOOTER ====================*/
-.footer {
-    background: #13171c;
-    padding: 4rem 9% 3rem;
-    text-align: center;
-    width: 100%;
+/* ==================== CONTACT MOBILE RESPONSIVENESS (मोबाईलसाठी) ==================== */
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 5rem 4% 3rem; 
+    }
+
+  
+    .contact .section-title {
+        font-size: 2.6rem;
+        margin-bottom: 3rem;
+    }
+
+    
+    .contact-form {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+   
+    .contact-left, 
+    .contact-right {
+        width: 100%;
+    }
+
+   
+    .contact-form input, 
+    .contact-form textarea {
+        padding: 1.2rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+
+    .contact-form textarea {
+        height: 160px; 
+    }
+
+    .submit-btn {
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
 }
 
-.footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
+@media (max-width: 480px) {
+    .contact .section-title {
+        font-size: 2.2rem;
+    }
 }
-
-.footer-social a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4.5rem;
-    height: 4.5rem;
-    background: transparent;
-    border: 2px solid #ff4500;
-    border-radius: 50%;
-    font-size: 2.2rem;
-    color: #ff4500;
-    transition: .4s ease;
-}
-
-.footer-social a:hover {
-    background: linear-gradient(90deg, #ff4500, #ffaa00);
-    color: #fff;
-    box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-    margin-bottom: 2.5rem;
-    list-style: none; 
-}
-
-.footer-links a {
-    font-size: 1.6rem;
-    color: #b2c0cc;
-    font-weight: 500;
-    transition: .3s;
-}
-
-.footer-links a:hover {
-    color: #ffaa00;
-}
-
-.footer-text p {
-    font-size: 1.4rem;
-    color: #666;
-    line-height: 1.6;
-}
-
 
 
