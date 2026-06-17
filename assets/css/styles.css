@@ -1146,12 +1146,12 @@ img, svg {
         font-size: 2.2rem;
     }
 }
-/*==================== SCREENSHOT EXACT MATCH STYLES ====================*/
+/*==================== Footer ====================*/
 
-/* १. मुख्य फुटर बॅकग्राउंड आणि रचना */
+
 html body .footer,
 html body footer.footer {
-    background: #191f28 !important; /* डार्क बॅकग्राउंड */
+    background: #191f28 !important;
     padding: 6rem 2% 5rem !important;
     display: flex !important;
     flex-direction: column !important;
@@ -1162,7 +1162,6 @@ html body footer.footer {
     clear: both !important;
 }
 
-/* २. सोशल मीडिया आयकॉन्स (परफेक्ट गोल आणि ऑरेंज रंग) */
 html body .footer .footer-social {
     display: flex !important;
     gap: 2.5rem !important;
@@ -1178,15 +1177,14 @@ html body .footer .footer-social a {
     width: 5.5rem !important;
     height: 5.5rem !important;
     background: transparent !important;
-    border: 2px solid #ff4500 !important; /* स्क्रीनशॉट सारखी ऑरेंज बॉर्डर */
-    border-radius: 50% !important; /* परफेक्ट गोल */
+    border: 2px solid #ff4500 !important; 
+    border-radius: 50% !important; 
     font-size: 2.4rem !important;
-    color: #ff4500 !important; /* ऑरेंज आयकॉन्स */
+    color: #ff4500 !important; 
     text-decoration: none !important;
     transition: 0.3s ease !important;
 }
 
-/* आयकॉन्सवरील होव्हर इफेक्ट */
 html body .footer .footer-social a:hover {
     background: #ff4500 !important;
     color: #191f28 !important;
@@ -1194,13 +1192,13 @@ html body .footer .footer-social a:hover {
     transform: translateY(-3px) !important;
 }
 
-/* ३. क्विक नेव्हिगेशन लिंक्स (स्क्रीनशॉट प्रमाणे २ लाईन्समध्ये मांडणी) */
+
 html body .footer .footer-links {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 3rem 4rem !important; /* सुटसुटीत गॅप */
-    max-width: 650px !important; /* यामुळे जास्त लिंक्स ऑटोमॅटिक २ लाईन्समध्ये सेट होतील */
+    gap: 3rem 4rem !important; 
+    max-width: 650px !important; 
     flex-wrap: wrap !important; 
     margin-bottom: 4rem !important; 
     width: 100% !important;
@@ -1208,7 +1206,7 @@ html body .footer .footer-links {
 
 html body .footer .footer-links a {
     font-size: 1.8rem !important;
-    color: #bcbcbc !important; /* स्क्रीनशॉट सारखा हलका पांढरा रंग */
+    color: #bcbcbc !important;
     text-decoration: none !important;
     font-weight: 400 !important;
     font-family: sans-serif !important;
@@ -1219,24 +1217,24 @@ html body .footer .footer-links a:hover {
     color: #ff4500 !important;
 }
 
-/* ४. बायो टेक्स्ट (लॅपटॉपवर पूर्ण एका लाईनमध्ये आणि मोबाईलवर न कट होता) */
+
 html body .footer .footer-text {
     width: 100% !important;
-    max-width: 950px !important; /* लॅपटॉपवर पूर्ण एका लाईनमध्ये बसण्यासाठी विड्थ वाढवली */
+    max-width: 950px !important; 
     text-align: center !important;
 }
 
 html body .footer .footer-text p {
     font-size: 1.6rem !important;
-    color: #5d6575 !important; /* स्क्रीनशॉट मधील टेक्स्टचा रंग */
+    color: #5d6575 !important; 
     text-align: center !important;
     line-height: 1.8 !important;
     width: 100% !important;
     max-width: 100% !important;
     display: inline-block !important;
-    white-space: normal !important; /* एका लाईनमध्ये जबरदस्तीने बसवणे बंद करेल */
+    white-space: normal !important; 
     word-wrap: break-word !important;
-    overflow-wrap: break-word !important; /* मोबाईलवर जागा संपताच शब्द खाली येईल */
+    overflow-wrap: break-word !important; 
     margin: 0 !important;
     font-family: sans-serif !important;
 }
