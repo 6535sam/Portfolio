@@ -1146,118 +1146,112 @@ img, svg {
         font-size: 2.2rem;
     }
 }
-/*==================== FOOTER  ====================*/
-.footer {
-    background: #191f28; 
-    padding: 5rem 2% 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/*==================== ULTIMATE FIX FOR FOOTER ====================*/
+.custom-footer {
+    background: #191f28 ; 
+    padding: 5rem 2% 4rem ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
     width: 100%;
+    clear: both ;
 }
 
 
-.footer .footer-social {
-    display: flex;
-    gap: 2.5rem;
-    margin-bottom: 3.5rem; 
+.custom-footer .footer-social {
+    display: flex ;
+    gap: 2.5rem ;
+    margin-bottom: 3.5rem ; 
 }
 
-.footer .footer-social a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5.5rem;
-    height: 5.5rem;
-    background: transparent;
-    border: 2.2px solid #ff4500; 
-    border-radius: 50%; 
-    font-size: 2.4rem;
-    color: #ff4500;
-    text-decoration: none;
-    transition: 0.3s ease;
+.custom-footer .footer-social a {
+    display: inline-flex ;
+    justify-content: center ;
+    align-items: center ;
+    width: 5.5rem ;
+    height: 5.5rem ;
+    background: transparent ;
+    border: 2.2px solid #ff4500 ; 
+    border-radius: 50% ; 
+    font-size: 2.4rem ;
+    color: #ff4500 ; 
+    text-decoration: none ;
+    transition: 0.3s ease ;
 }
 
-
-.footer .footer-social a:hover {
-    background: #ff4500;
-    color: #191f28;
-    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
-    transform: translateY(-3px);
-}
-
-
-.footer .footer-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    max-width: 700px;
-    flex-wrap: wrap; 
-    margin-bottom: 3.5rem; 
-}
-
-.footer .footer-links a {
-    font-size: 1.8rem;
-    color: #bcbcbc; 
-    text-decoration: none;
-    font-weight: 400;
-    transition: 0.3s ease;
-}
-
-.footer .footer-links a:hover {
-    color: #ff4500; 
+.custom-footer .footer-social a:hover {
+    background: #ff4500 ;
+    color: #191f28 ;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5) ;
+    transform: translateY(-2px);
 }
 
 
-.footer .footer-text {
+.custom-footer .footer-links {
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    gap: 3rem ;
+    max-width: 750px ;
+    flex-wrap: wrap ; 
+    margin-bottom: 3.5rem ; 
+}
+
+.custom-footer .footer-links a {
+    font-size: 1.8rem ;
+    color: #bcbcbc ; 
+    text-decoration: none ;
+    font-weight: 400 ;
+    transition: 0.3s ease ;
+}
+
+.custom-footer .footer-links a:hover {
+    color: #ff4500 ; 
+}
+
+
+.custom-footer .footer-text {
+    width: 100% ;
+    max-width: 100% ;
+    text-align: center ;
+}
+
+.custom-footer .footer-text p {
+    font-size: 1.5rem ;
+    color: #5d6575 ; 
+    text-align: center ;
+    line-height: 1.8 ;
     width: 100%;
-    max-width: 100%;
-    text-align: center;
-    padding: 0 1.5rem;
+    max-width: 100% ;
+    display: inline-block ;
+    white-space: normal ; 
+    word-wrap: break-word ;
+    overflow-wrap: break-word ;
 }
 
-.footer .footer-text p {
-    font-size: 1.5rem;
-    color: #5d6575; 
-    text-align: center;
-    line-height: 1.8;
-    width: 100%;
-    max-width: 100%;
-    display: inline-block;
-    word-wrap: break-word;      
-    overflow-wrap: break-word; 
-    white-space: normal;        
-}
-
-/* ==================== FOOTER MOBILE RESPONSIVENESS ==================== */
+/* ==================== MOBILE RESPONSIVENESS ==================== */
 @media (max-width: 768px) {
-    .footer {
-        padding: 4rem 4% 3rem;
+    .custom-footer {
+        padding: 4rem 4% 3rem ;
     }
-
-    .footer .footer-social {
+    .custom-footer .footer-social {
         gap: 2rem;
+        margin-bottom: 2.5rem ;
+    }
+    .custom-footer .footer-social a {
+        width: 4.8rem ;
+        height: 4.8rem ;
+        font-size: 2rem ;
+    }
+    .custom-footer .footer-links {
+        gap: 2rem 1.5rem ; 
         margin-bottom: 2.5rem;
     }
-
-    .footer .footer-social a {
-        width: 4.8rem;
-        height: 4.8rem;
-        font-size: 2rem;
+    .custom-footer .footer-links a {
+        font-size: 1.5rem ;
     }
-
-    .footer .footer-links {
-        gap: 2rem 1.5rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .footer .footer-links a {
-        font-size: 1.5rem;
-    }
-
-    .footer .footer-text p {
-        font-size: 1.3rem;
+    .custom-footer .footer-text p {
+        font-size: 1.3rem ;
     }
 }
